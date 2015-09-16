@@ -7,7 +7,7 @@
 				</div>
   				<div class="panel-body">
   					<div class="alert alert-info">
-  						<i class="fa fa-exclamation-triangle fa-2x pull-left"></i> This job board is specifically for jobs using <a href="http://www.meteor.com/">Meteor</a>.  Please do not post unrelated jobs here.
+  						<i class="fa fa-exclamation-triangle fa-2x pull-left"></i> This job board is specifically for jobs in the PPC Space. Please do not post unrelated jobs here.
   					</div>
     				{{#autoForm id="jobNew" collection="Jobs" type="insert"}}
 					    {{>jobFields}}
@@ -49,6 +49,6 @@
     {{> afQuickField name='remote'}}
     {{> afQuickField name='url' placeholder="External URL of job posting"}}
     {{> afQuickField name="jobtype" firstOption="(Select a Job Type)" options="allowed"}}
-    {{> afQuickField name='description' rows=8  placeholder="Tell prospective developers about this position.  What is the project? What will you expect them to know beforehand? Things like that."}}
+    {{> afQuickField name='description' rows=8  placeholder="Tell prospective PPC pros about this position.  What is the project? What will you expect them to know beforehand? Things like that."}}
     {{> afQuickField name='contact' placeholder="email/twitter/whatever for you to be contacted at (your user account email address is not displayed)"}}
 </template>

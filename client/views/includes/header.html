@@ -11,23 +11,23 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="/">We Work Meteor</a>
+					<a class="navbar-brand" href="/">We Work in PPC</a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li class="{{isActiveRoute regex='^jobs$'}}"><a href="{{pathFor 'jobs'}}">Jobs</a></li>
-						<li class="{{isActiveRoute regex='profiles'}}"><a href="{{pathFor 'profiles'}}">Developers</a></li>
+						<li class="{{isActiveRoute regex='profiles'}}"><a href="{{pathFor 'profiles'}}">PPC Pros</a></li>
 						{{#if currentUser}}
 							<li class="{{isActiveRoute regex='jobNew'}}"><a href="{{pathFor 'jobNew'}}">Post a Job</a></li>
 							{{#unless currentUser.isDeveloper}}
 								<li class="{{isActiveRoute regex='^profile$'}}">
-									<a href="{{pathFor 'profileNew'}}">Create Developer Profile</a>
+									<a href="{{pathFor 'profileNew'}}">Create PPC Pro Profile</a>
 								</li>
 							{{/unless}}
 						{{/if}}
-						
+
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						{{#if currentUser}}
@@ -46,11 +46,11 @@
 									{{/if}}
 									{{#if currentUser.isDeveloper}}
 										<li>
-											{{#with profile}}<a href="{{pathFor 'profile'}}"><i class="fa fa-rocket fa-fw"></i> Developer Profile</a>{{/with}}
+											{{#with profile}}<a href="{{pathFor 'profile'}}"><i class="fa fa-rocket fa-fw"></i> PPC Pro Profile</a>{{/with}}
 										</li>
 									{{else}}
 										<li>
-											<a href="{{pathFor 'profileNew'}}"><i class="fa fa-rocket fa-fw"></i> Create Developer Profile</a>
+											<a href="{{pathFor 'profileNew'}}"><i class="fa fa-rocket fa-fw"></i> Create PPC pro Profile</a>
 										</li>
 									{{/if}}
 									<li>
