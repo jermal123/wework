@@ -17,13 +17,13 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="{{isActiveRoute regex='^jobs$'}}"><a href="{{pathFor 'jobs'}}">Jobs</a></li>
+						<li class="{{isActiveRoute regex='^jobs$'}}"><a href="{{pathFor 'jobs'}}">Jobs in PPC</a></li>
 						<li class="{{isActiveRoute regex='profiles'}}"><a href="{{pathFor 'profiles'}}">PPC Pros</a></li>
 						{{#if currentUser}}
 							<li class="{{isActiveRoute regex='jobNew'}}"><a href="{{pathFor 'jobNew'}}">Post a Job</a></li>
 							{{#unless currentUser.isDeveloper}}
 								<li class="{{isActiveRoute regex='^profile$'}}">
-									<a href="{{pathFor 'profileNew'}}">Create PPC Pro Profile</a>
+									<a href="{{pathFor 'profileNew'}}">Create a PPC Pro Profile</a>
 								</li>
 							{{/unless}}
 						{{/if}}
@@ -50,7 +50,7 @@
 										</li>
 									{{else}}
 										<li>
-											<a href="{{pathFor 'profileNew'}}"><i class="fa fa-rocket fa-fw"></i> Create PPC pro Profile</a>
+											<a href="{{pathFor 'profileNew'}}"><i class="fa fa-rocket fa-fw"></i> Create a PPC pro Profile</a>
 										</li>
 									{{/if}}
 									<li>
