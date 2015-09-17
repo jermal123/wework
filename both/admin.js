@@ -1,5 +1,6 @@
 AdminConfig = {
   name: 'We Work in PPC',
+  adminEmails: ['jeroen@themarketingshop.nl']
   collections: {
     Jobs: {
       icon: 'briefcase',
